@@ -1,0 +1,23 @@
+﻿Build started 2/26/2015 9:44:44 PM.
+     1>Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\device.vcxproj" on node 5 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\device_debug\device.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I..\..\zlib /I..\..\png /I..\..\jpeg /I../.. /Zi /nologo /W1 /WX- /Od /Oy- /D _CRT_SECURE_NO_DEPRECATE /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D VC_EXTRA_LEAN /D WIN32_EXTRA_LEAN /D _VC80_UPGRADE=0x0710 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\device_debug\\" /Fd".\device_debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\device.cxx
+         device.cxx
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../test/deviced.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\lib fltkd.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:libcd /MANIFEST /ManifestFile:".\device_debug\deviced.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\device_debug\deviced.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"..\..\test\deviced.lib" /MACHINE:X86 .\device_debug\device.obj
+         "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\lib\fltkd.lib"
+         device.vcxproj -> F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\..\..\test\deviced.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"../../test/deviced.exe;#1" /manifest .\device_debug\deviced.exe.intermediate.manifest
+       CopyFilesToOutputDirectory:
+         Copying file from ".\device_debug\deviced.pdb" to "..\..\test\deviced.pdb".
+       FinalizeBuildStatus:
+         Deleting file ".\device_debug\device.unsuccessfulbuild".
+         Touching ".\device_debug\device.lastbuildstate".
+     1>Done Building Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\device.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.30

@@ -1,0 +1,29 @@
+﻿Build started 2/27/2015 10:43:12 AM.
+     1>Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\fltkforms.vcxproj" on node 5 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\fltkforms_release\fltkforms.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I..\..\zlib /I..\..\png /I..\..\jpeg /I../.. /Zi /nologo /W1 /WX- /Od /Ob2 /Oy- /D _CRT_SECURE_NO_DEPRECATE /D FL_LIBRARY /D WIN32 /D NDEBUG /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D VC_EXTRA_LEAN /D WIN32_EXTRA_LEAN /D _VC80_UPGRADE=0x0710 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\fltkforms_release\\" /Fd".\fltkforms_release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\forms_bitmap.cxx ..\..\src\forms_compatability.cxx ..\..\src\forms_free.cxx ..\..\src\forms_fselect.cxx ..\..\src\forms_pixmap.cxx ..\..\src\forms_timer.cxx
+         forms_bitmap.cxx
+         forms_compatability.cxx
+         forms_free.cxx
+         forms_fselect.cxx
+         forms_pixmap.cxx
+         forms_timer.cxx
+         Generating Code...
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\..\lib\fltkforms.lib" /NOLOGO .\fltkforms_release\forms_bitmap.obj
+         .\fltkforms_release\forms_compatability.obj
+         .\fltkforms_release\forms_free.obj
+         .\fltkforms_release\forms_fselect.obj
+         .\fltkforms_release\forms_pixmap.obj
+         .\fltkforms_release\forms_timer.obj
+         fltkforms.vcxproj -> F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\..\..\lib\fltkforms.lib
+       FinalizeBuildStatus:
+         Deleting file ".\fltkforms_release\fltkforms.unsuccessfulbuild".
+         Touching ".\fltkforms_release\fltkforms.lastbuildstate".
+     1>Done Building Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\fltkforms.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.39

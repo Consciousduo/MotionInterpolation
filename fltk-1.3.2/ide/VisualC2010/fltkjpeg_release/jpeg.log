@@ -1,0 +1,113 @@
+﻿Build started 2/27/2015 10:43:12 AM.
+     1>Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\jpeg.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\fltkjpeg_release\fltkjpeg.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I..\..\zlib /I..\..\png /I..\..\jpeg /I../.. /Zi /nologo /W3 /WX- /Od /Ob2 /Oy- /D _CRT_SECURE_NO_DEPRECATE /D WIN32 /D NDEBUG /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D VC_EXTRA_LEAN /D WIN32_EXTRA_LEAN /D _VC80_UPGRADE=0x0710 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\fltkjpeg_release\\" /Fd".\fltkjpeg_release\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\jpeg\jcapimin.c ..\..\jpeg\jcapistd.c ..\..\jpeg\jccoefct.c ..\..\jpeg\jccolor.c ..\..\jpeg\jcdctmgr.c ..\..\jpeg\jchuff.c ..\..\jpeg\jcinit.c ..\..\jpeg\jcmainct.c ..\..\jpeg\jcmarker.c ..\..\jpeg\jcmaster.c ..\..\jpeg\jcomapi.c ..\..\jpeg\jcparam.c ..\..\jpeg\jaricom.c ..\..\jpeg\jcarith.c ..\..\jpeg\jdarith.c ..\..\jpeg\jcprepct.c ..\..\jpeg\jcsample.c ..\..\jpeg\jctrans.c ..\..\jpeg\jdapimin.c ..\..\jpeg\jdapistd.c ..\..\jpeg\jdatadst.c ..\..\jpeg\jdatasrc.c ..\..\jpeg\jdcoefct.c ..\..\jpeg\jdcolor.c ..\..\jpeg\jddctmgr.c ..\..\jpeg\jdhuff.c ..\..\jpeg\jdinput.c ..\..\jpeg\jdmainct.c ..\..\jpeg\jdmarker.c ..\..\jpeg\jdmaster.c ..\..\jpeg\jdmerge.c ..\..\jpeg\jdpostct.c ..\..\jpeg\jdsample.c ..\..\jpeg\jdtrans.c ..\..\jpeg\jerror.c ..\..\jpeg\jfdctflt.c ..\..\jpeg\jfdctfst.c ..\..\jpeg\jfdctint.c ..\..\jpeg\jidctflt.c ..\..\jpeg\jidctfst.c ..\..\jpeg\jidctint.c ..\..\jpeg\jmemmgr.c ..\..\jpeg\jmemnobs.c ..\..\jpeg\jquant1.c ..\..\jpeg\jquant2.c ..\..\jpeg\jutils.c
+         jcapimin.c
+         jcapistd.c
+         jccoefct.c
+         jccolor.c
+         jcdctmgr.c
+         jchuff.c
+         jcinit.c
+         jcmainct.c
+         jcmarker.c
+         jcmaster.c
+         jcomapi.c
+         jcparam.c
+         jaricom.c
+         jcarith.c
+         jdarith.c
+         jcprepct.c
+         jcsample.c
+         jctrans.c
+         jdapimin.c
+         jdapistd.c
+         Generating Code...
+         Compiling...
+         jdatadst.c
+         jdatasrc.c
+         jdcoefct.c
+         jdcolor.c
+         jddctmgr.c
+         jdhuff.c
+         jdinput.c
+         jdmainct.c
+         jdmarker.c
+         jdmaster.c
+         jdmerge.c
+         jdpostct.c
+         jdsample.c
+         jdtrans.c
+         jerror.c
+         jfdctflt.c
+         jfdctfst.c
+         jfdctint.c
+         jidctflt.c
+         jidctfst.c
+         Generating Code...
+         Compiling...
+         jidctint.c
+         jmemmgr.c
+         jmemnobs.c
+         jquant1.c
+         jquant2.c
+         jutils.c
+         Generating Code...
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\..\lib\fltkjpeg.lib" /NOLOGO .\fltkjpeg_release\jcapimin.obj
+         .\fltkjpeg_release\jcapistd.obj
+         .\fltkjpeg_release\jccoefct.obj
+         .\fltkjpeg_release\jccolor.obj
+         .\fltkjpeg_release\jcdctmgr.obj
+         .\fltkjpeg_release\jchuff.obj
+         .\fltkjpeg_release\jcinit.obj
+         .\fltkjpeg_release\jcmainct.obj
+         .\fltkjpeg_release\jcmarker.obj
+         .\fltkjpeg_release\jcmaster.obj
+         .\fltkjpeg_release\jcomapi.obj
+         .\fltkjpeg_release\jcparam.obj
+         .\fltkjpeg_release\jaricom.obj
+         .\fltkjpeg_release\jcarith.obj
+         .\fltkjpeg_release\jdarith.obj
+         .\fltkjpeg_release\jcprepct.obj
+         .\fltkjpeg_release\jcsample.obj
+         .\fltkjpeg_release\jctrans.obj
+         .\fltkjpeg_release\jdapimin.obj
+         .\fltkjpeg_release\jdapistd.obj
+         .\fltkjpeg_release\jdatadst.obj
+         .\fltkjpeg_release\jdatasrc.obj
+         .\fltkjpeg_release\jdcoefct.obj
+         .\fltkjpeg_release\jdcolor.obj
+         .\fltkjpeg_release\jddctmgr.obj
+         .\fltkjpeg_release\jdhuff.obj
+         .\fltkjpeg_release\jdinput.obj
+         .\fltkjpeg_release\jdmainct.obj
+         .\fltkjpeg_release\jdmarker.obj
+         .\fltkjpeg_release\jdmaster.obj
+         .\fltkjpeg_release\jdmerge.obj
+         .\fltkjpeg_release\jdpostct.obj
+         .\fltkjpeg_release\jdsample.obj
+         .\fltkjpeg_release\jdtrans.obj
+         .\fltkjpeg_release\jerror.obj
+         .\fltkjpeg_release\jfdctflt.obj
+         .\fltkjpeg_release\jfdctfst.obj
+         .\fltkjpeg_release\jfdctint.obj
+         .\fltkjpeg_release\jidctflt.obj
+         .\fltkjpeg_release\jidctfst.obj
+         .\fltkjpeg_release\jidctint.obj
+         .\fltkjpeg_release\jmemmgr.obj
+         .\fltkjpeg_release\jmemnobs.obj
+         .\fltkjpeg_release\jquant1.obj
+         .\fltkjpeg_release\jquant2.obj
+         .\fltkjpeg_release\jutils.obj
+         jpeg.vcxproj -> F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\..\..\lib\fltkjpeg.lib
+       FinalizeBuildStatus:
+         Deleting file ".\fltkjpeg_release\fltkjpeg.unsuccessfulbuild".
+         Touching ".\fltkjpeg_release\fltkjpeg.lastbuildstate".
+     1>Done Building Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\jpeg.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.82

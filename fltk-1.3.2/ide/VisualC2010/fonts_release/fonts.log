@@ -1,0 +1,21 @@
+﻿Build started 2/27/2015 10:43:36 AM.
+     1>Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\fonts.vcxproj" on node 6 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\fonts_release\fonts.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I..\..\zlib /I..\..\png /I..\..\jpeg /I../.. /Zi /nologo /W1 /WX- /Od /Ob2 /Os /Oy- /D _CRT_SECURE_NO_DEPRECATE /D WIN32 /D NDEBUG /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D VC_EXTRA_LEAN /D WIN32_EXTRA_LEAN /D _VC80_UPGRADE=0x0710 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\fonts_release\\" /Fd".\fonts_release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\fonts.cxx
+         fonts.cxx
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../test/fonts.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\lib fltk.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:libcd /MANIFEST /ManifestFile:".\fonts_release\fonts.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:".\fonts_release\fonts.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"..\..\test\fonts.lib" /MACHINE:X86 .\fonts_release\fonts.obj
+         "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\lib\fltk.lib"
+         fonts.vcxproj -> F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\..\..\test\fonts.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"../../test/fonts.exe;#1" /manifest .\fonts_release\fonts.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file ".\fonts_release\fonts.unsuccessfulbuild".
+         Touching ".\fonts_release\fonts.lastbuildstate".
+     1>Done Building Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\fonts.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.63

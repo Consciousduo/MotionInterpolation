@@ -1,0 +1,31 @@
+﻿Build started 2/26/2015 9:43:54 PM.
+     1>Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\fltkforms.vcxproj" on node 5 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\fltkforms_debug\fltkforms.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I..\..\zlib /I..\..\png /I..\..\jpeg /I../.. /Zi /nologo /W1 /WX- /Od /Oy- /D _CRT_SECURE_NO_DEPRECATE /D FL_LIBRARY /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D VC_EXTRA_LEAN /D WIN32_EXTRA_LEAN /D _VC80_UPGRADE=0x0710 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\fltkforms_debug\\" /Fd".\fltkforms_debug\vc100.pdb" /FR".\fltkforms_debug\\" /Gd /TP /analyze- /errorReport:prompt ..\..\src\forms_bitmap.cxx ..\..\src\forms_compatability.cxx ..\..\src\forms_free.cxx ..\..\src\forms_fselect.cxx ..\..\src\forms_pixmap.cxx ..\..\src\forms_timer.cxx
+         forms_bitmap.cxx
+         forms_compatability.cxx
+         forms_free.cxx
+         forms_fselect.cxx
+         forms_pixmap.cxx
+         forms_timer.cxx
+         Generating Code...
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\..\lib\fltkformsd.lib" /NOLOGO .\fltkforms_debug\forms_bitmap.obj
+         .\fltkforms_debug\forms_compatability.obj
+         .\fltkforms_debug\forms_free.obj
+         .\fltkforms_debug\forms_fselect.obj
+         .\fltkforms_debug\forms_pixmap.obj
+         .\fltkforms_debug\forms_timer.obj
+         fltkforms.vcxproj -> F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\..\..\lib\fltkformsd.lib
+       BscMake:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o"..\..\lib\fltkformsd.bsc" .\fltkforms_debug\forms_bitmap.sbr .\fltkforms_debug\forms_compatability.sbr .\fltkforms_debug\forms_free.sbr .\fltkforms_debug\forms_fselect.sbr .\fltkforms_debug\forms_pixmap.sbr .\fltkforms_debug\forms_timer.sbr
+       FinalizeBuildStatus:
+         Deleting file ".\fltkforms_debug\fltkforms.unsuccessfulbuild".
+         Touching ".\fltkforms_debug\fltkforms.lastbuildstate".
+     1>Done Building Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\fltkforms.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.78

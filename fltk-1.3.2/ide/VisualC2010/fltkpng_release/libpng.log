@@ -1,0 +1,47 @@
+﻿Build started 2/27/2015 10:43:14 AM.
+     1>Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\libpng.vcxproj" on node 4 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\fltkpng_release\fltkpng.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I..\..\zlib /I..\..\png /I..\..\jpeg /I../.. /Zi /nologo /W3 /WX- /Od /Ob2 /Oy- /D _CRT_SECURE_NO_DEPRECATE /D WIN32 /D NDEBUG /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D VC_EXTRA_LEAN /D WIN32_EXTRA_LEAN /D _VC80_UPGRADE=0x0710 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\fltkpng_release\\" /Fd".\fltkpng_release\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\png\png.c ..\..\png\pngerror.c ..\..\png\pngget.c ..\..\png\pngmem.c ..\..\png\pngpread.c ..\..\png\pngread.c ..\..\png\pngrio.c ..\..\png\pngrtran.c ..\..\png\pngrutil.c ..\..\png\pngset.c ..\..\png\pngtrans.c ..\..\png\pngwio.c ..\..\png\pngwrite.c ..\..\png\pngwtran.c ..\..\png\pngwutil.c
+         png.c
+         pngerror.c
+         pngget.c
+         pngmem.c
+         pngpread.c
+         pngread.c
+         pngrio.c
+         pngrtran.c
+         pngrutil.c
+         pngset.c
+         pngtrans.c
+         pngwio.c
+         pngwrite.c
+         pngwtran.c
+         pngwutil.c
+         Generating Code...
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\..\lib\fltkpng.lib" /NOLOGO .\fltkpng_release\png.obj
+         .\fltkpng_release\pngerror.obj
+         .\fltkpng_release\pngget.obj
+         .\fltkpng_release\pngmem.obj
+         .\fltkpng_release\pngpread.obj
+         .\fltkpng_release\pngread.obj
+         .\fltkpng_release\pngrio.obj
+         .\fltkpng_release\pngrtran.obj
+         .\fltkpng_release\pngrutil.obj
+         .\fltkpng_release\pngset.obj
+         .\fltkpng_release\pngtrans.obj
+         .\fltkpng_release\pngwio.obj
+         .\fltkpng_release\pngwrite.obj
+         .\fltkpng_release\pngwtran.obj
+         .\fltkpng_release\pngwutil.obj
+         libpng.vcxproj -> F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\..\..\lib\fltkpng.lib
+       FinalizeBuildStatus:
+         Deleting file ".\fltkpng_release\fltkpng.unsuccessfulbuild".
+         Touching ".\fltkpng_release\fltkpng.lastbuildstate".
+     1>Done Building Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\libpng.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.51

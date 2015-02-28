@@ -1,0 +1,41 @@
+﻿Build started 2/27/2015 10:43:12 AM.
+     1>Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\fltkgl.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\fltkgl_release\fltkgl.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I..\..\zlib /I..\..\png /I..\..\jpeg /I..\.. /Zi /nologo /W1 /WX- /Od /Ob2 /Oy- /D _CRT_SECURE_NO_DEPRECATE /D FL_LIBRARY /D WIN32 /D NDEBUG /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D VC_EXTRA_LEAN /D WIN32_EXTRA_LEAN /D _VC80_UPGRADE=0x0710 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\fltkgl_release\\" /Fd".\fltkgl_release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\Fl_Gl_Choice.cxx ..\..\src\Fl_Gl_Device_Plugin.cxx ..\..\src\Fl_Gl_Overlay.cxx ..\..\src\Fl_Gl_Window.cxx ..\..\src\freeglut_geometry.cxx ..\..\src\freeglut_stroke_mono_roman.cxx ..\..\src\freeglut_stroke_roman.cxx ..\..\src\freeglut_teapot.cxx ..\..\src\gl_draw.cxx ..\..\src\gl_start.cxx ..\..\src\glut_compatability.cxx ..\..\src\glut_font.cxx
+         Fl_Gl_Choice.cxx
+         Fl_Gl_Device_Plugin.cxx
+         Fl_Gl_Overlay.cxx
+         Fl_Gl_Window.cxx
+         freeglut_geometry.cxx
+         freeglut_stroke_mono_roman.cxx
+         freeglut_stroke_roman.cxx
+         freeglut_teapot.cxx
+         gl_draw.cxx
+         gl_start.cxx
+         glut_compatability.cxx
+         glut_font.cxx
+         Generating Code...
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\..\lib\fltkgl.lib" /NOLOGO .\fltkgl_release\Fl_Gl_Choice.obj
+         .\fltkgl_release\Fl_Gl_Device_Plugin.obj
+         .\fltkgl_release\Fl_Gl_Overlay.obj
+         .\fltkgl_release\Fl_Gl_Window.obj
+         .\fltkgl_release\freeglut_geometry.obj
+         .\fltkgl_release\freeglut_stroke_mono_roman.obj
+         .\fltkgl_release\freeglut_stroke_roman.obj
+         .\fltkgl_release\freeglut_teapot.obj
+         .\fltkgl_release\gl_draw.obj
+         .\fltkgl_release\gl_start.obj
+         .\fltkgl_release\glut_compatability.obj
+         .\fltkgl_release\glut_font.obj
+         fltkgl.vcxproj -> F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\..\..\lib\fltkgl.lib
+       FinalizeBuildStatus:
+         Deleting file ".\fltkgl_release\fltkgl.unsuccessfulbuild".
+         Touching ".\fltkgl_release\fltkgl.lastbuildstate".
+     1>Done Building Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\fltkgl.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.20

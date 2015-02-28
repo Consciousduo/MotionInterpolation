@@ -1,0 +1,23 @@
+﻿Build started 2/26/2015 9:44:46 PM.
+     1>Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\color_chooser.vcxproj" on node 4 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\color_chooser_debug\color_chooser.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I..\..\zlib /I..\..\png /I..\..\jpeg /I../.. /Zi /nologo /W1 /WX- /Od /Oy- /D _CRT_SECURE_NO_DEPRECATE /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D VC_EXTRA_LEAN /D WIN32_EXTRA_LEAN /D _VC80_UPGRADE=0x0710 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\color_chooser_debug\\" /Fd".\color_chooser_debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\color_chooser.cxx
+         color_chooser.cxx
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../test/color_chooserd.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\lib fltkd.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:libcd /MANIFEST /ManifestFile:".\color_chooser_debug\color_chooserd.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\color_chooser_debug\color_chooserd.pdb" /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"..\..\test\color_chooserd.lib" /MACHINE:X86 .\color_chooser_debug\color_chooser.obj
+         "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\lib\fltkd.lib"
+         color_chooser.vcxproj -> F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\..\..\test\color_chooserd.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"../../test/color_chooserd.exe;#1" /manifest .\color_chooser_debug\color_chooserd.exe.intermediate.manifest
+       CopyFilesToOutputDirectory:
+         Copying file from ".\color_chooser_debug\color_chooserd.pdb" to "..\..\test\color_chooserd.pdb".
+       FinalizeBuildStatus:
+         Deleting file ".\color_chooser_debug\color_chooser.unsuccessfulbuild".
+         Touching ".\color_chooser_debug\color_chooser.lastbuildstate".
+     1>Done Building Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\color_chooser.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.84

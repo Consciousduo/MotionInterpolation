@@ -1,0 +1,21 @@
+﻿Build started 2/27/2015 10:43:34 AM.
+     1>Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\minimum.vcxproj" on node 6 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\minimum_release\minimum.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I..\..\zlib /I..\..\png /I..\..\jpeg /I../.. /Zi /nologo /W1 /WX- /Od /Ob2 /Os /Oy- /D _CRT_SECURE_NO_DEPRECATE /D WIN32 /D NDEBUG /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D VC_EXTRA_LEAN /D WIN32_EXTRA_LEAN /D _VC80_UPGRADE=0x0710 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\minimum_release\\" /Fd".\minimum_release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\minimum.cxx
+         minimum.cxx
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../test/minimum.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\lib fltk.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:libcd /MANIFEST /ManifestFile:".\minimum_release\minimum.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:".\minimum_release\minimum.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"..\..\test\minimum.lib" /MACHINE:X86 .\minimum_release\minimum.obj
+         "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\lib\fltk.lib"
+         minimum.vcxproj -> F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\..\..\test\minimum.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"../../test/minimum.exe;#1" /manifest .\minimum_release\minimum.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file ".\minimum_release\minimum.unsuccessfulbuild".
+         Touching ".\minimum_release\minimum.lastbuildstate".
+     1>Done Building Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\minimum.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.56

@@ -1,0 +1,33 @@
+﻿Build started 2/27/2015 10:43:12 AM.
+     1>Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\fltkimages.vcxproj" on node 4 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\fltkimages_release\fltkimages.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I..\..\zlib /I..\..\png /I..\..\jpeg /I../.. /Zi /nologo /W1 /WX- /Od /Ob2 /Oy- /D _CRT_SECURE_NO_DEPRECATE /D FL_LIBRARY /D WIN32 /D NDEBUG /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D VC_EXTRA_LEAN /D WIN32_EXTRA_LEAN /D _VC80_UPGRADE=0x0710 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\fltkimages_release\\" /Fd".\fltkimages_release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\Fl_BMP_Image.cxx ..\..\src\Fl_File_Icon2.cxx ..\..\src\Fl_GIF_Image.cxx ..\..\src\Fl_Help_Dialog.cxx ..\..\src\fl_images_core.cxx ..\..\src\Fl_JPEG_Image.cxx ..\..\src\Fl_PNG_Image.cxx ..\..\src\Fl_PNM_Image.cxx
+         Fl_BMP_Image.cxx
+         Fl_File_Icon2.cxx
+         Fl_GIF_Image.cxx
+         Fl_Help_Dialog.cxx
+         fl_images_core.cxx
+         Fl_JPEG_Image.cxx
+         Fl_PNG_Image.cxx
+         Fl_PNM_Image.cxx
+         Generating Code...
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\..\lib\fltkimages.lib" /NOLOGO .\fltkimages_release\Fl_BMP_Image.obj
+         .\fltkimages_release\Fl_File_Icon2.obj
+         .\fltkimages_release\Fl_GIF_Image.obj
+         .\fltkimages_release\Fl_Help_Dialog.obj
+         .\fltkimages_release\fl_images_core.obj
+         .\fltkimages_release\Fl_JPEG_Image.obj
+         .\fltkimages_release\Fl_PNG_Image.obj
+         .\fltkimages_release\Fl_PNM_Image.obj
+         fltkimages.vcxproj -> F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\..\..\lib\fltkimages.lib
+       FinalizeBuildStatus:
+         Deleting file ".\fltkimages_release\fltkimages.unsuccessfulbuild".
+         Touching ".\fltkimages_release\fltkimages.lastbuildstate".
+     1>Done Building Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\fltkimages.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.31

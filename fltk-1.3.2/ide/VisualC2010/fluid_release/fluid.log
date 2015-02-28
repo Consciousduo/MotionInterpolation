@@ -1,0 +1,63 @@
+﻿Build started 2/27/2015 10:43:56 AM.
+     1>Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\fluid.vcxproj" on node 7 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\fluid_release\fluid.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I..\..\zlib /I..\..\png /I..\..\jpeg /I../.. /Zi /nologo /W1 /WX- /Od /Ob2 /Oy- /D _CRT_SECURE_NO_DEPRECATE /D WIN32 /D NDEBUG /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D VC_EXTRA_LEAN /D WIN32_EXTRA_LEAN /D _VC80_UPGRADE=0x0710 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\fluid_release\\" /Fd".\fluid_release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\fluid\about_panel.cxx ..\..\fluid\align_widget.cxx ..\..\fluid\alignment_panel.cxx ..\..\fluid\code.cxx ..\..\fluid\CodeEditor.cxx ..\..\fluid\factory.cxx ..\..\fluid\file.cxx ..\..\fluid\Fl_Function_Type.cxx ..\..\fluid\Fl_Group_Type.cxx ..\..\fluid\Fl_Menu_Type.cxx ..\..\fluid\Fl_Type.cxx ..\..\fluid\Fl_Widget_Type.cxx ..\..\fluid\Fl_Window_Type.cxx ..\..\fluid\fluid.cxx ..\..\fluid\Fluid_Image.cxx ..\..\fluid\function_panel.cxx ..\..\fluid\template_panel.cxx ..\..\fluid\undo.cxx ..\..\fluid\widget_panel.cxx
+         about_panel.cxx
+         align_widget.cxx
+         alignment_panel.cxx
+         code.cxx
+         CodeEditor.cxx
+         factory.cxx
+         file.cxx
+         Fl_Function_Type.cxx
+         Fl_Group_Type.cxx
+         Fl_Menu_Type.cxx
+         Fl_Type.cxx
+         Fl_Widget_Type.cxx
+         Fl_Window_Type.cxx
+         fluid.cxx
+         Fluid_Image.cxx
+         function_panel.cxx
+         template_panel.cxx
+         undo.cxx
+         widget_panel.cxx
+         Generating Code...
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../fluid/fluid.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:libcmt /MANIFEST /ManifestFile:".\fluid_release\fluid.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:".\fluid_release\fluid.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"..\..\fluid\fluid.lib" /MACHINE:X86 .\fluid_release\about_panel.obj
+         .\fluid_release\align_widget.obj
+         .\fluid_release\alignment_panel.obj
+         .\fluid_release\code.obj
+         .\fluid_release\CodeEditor.obj
+         .\fluid_release\factory.obj
+         .\fluid_release\file.obj
+         .\fluid_release\Fl_Function_Type.obj
+         .\fluid_release\Fl_Group_Type.obj
+         .\fluid_release\Fl_Menu_Type.obj
+         .\fluid_release\Fl_Type.obj
+         .\fluid_release\Fl_Widget_Type.obj
+         .\fluid_release\Fl_Window_Type.obj
+         .\fluid_release\fluid.obj
+         .\fluid_release\Fluid_Image.obj
+         .\fluid_release\function_panel.obj
+         .\fluid_release\template_panel.obj
+         .\fluid_release\undo.obj
+         .\fluid_release\widget_panel.obj
+         "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\lib\fltk.lib"
+         "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\lib\fltkforms.lib"
+         "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\lib\fltkimages.lib"
+         "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\lib\fltkjpeg.lib"
+         "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\lib\fltkpng.lib"
+         "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\lib\fltkzlib.lib"
+         fluid.vcxproj -> F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\..\..\fluid\fluid.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"../../fluid/fluid.exe;#1" /manifest .\fluid_release\fluid.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file ".\fluid_release\fluid.unsuccessfulbuild".
+         Touching ".\fluid_release\fluid.lastbuildstate".
+     1>Done Building Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\fluid.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.22

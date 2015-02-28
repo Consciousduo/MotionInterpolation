@@ -1,0 +1,23 @@
+﻿Build started 2/26/2015 9:44:39 PM.
+     1>Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\menubar.vcxproj" on node 6 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\menubar_debug\menubar.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I..\..\zlib /I..\..\png /I..\..\jpeg /I../.. /Zi /nologo /W1 /WX- /Od /Oy- /D _CRT_SECURE_NO_DEPRECATE /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D VC_EXTRA_LEAN /D WIN32_EXTRA_LEAN /D _VC80_UPGRADE=0x0710 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\menubar_debug\\" /Fd".\menubar_debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\menubar.cxx
+         menubar.cxx
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../test/menubard.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\lib fltkd.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:libcd /MANIFEST /ManifestFile:".\menubar_debug\menubard.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\menubar_debug\menubard.pdb" /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"..\..\test\menubard.lib" /MACHINE:X86 .\menubar_debug\menubar.obj
+         "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\lib\fltkd.lib"
+         menubar.vcxproj -> F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\..\..\test\menubard.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"../../test/menubard.exe;#1" /manifest .\menubar_debug\menubard.exe.intermediate.manifest
+       CopyFilesToOutputDirectory:
+         Copying file from ".\menubar_debug\menubard.pdb" to "..\..\test\menubard.pdb".
+       FinalizeBuildStatus:
+         Deleting file ".\menubar_debug\menubar.unsuccessfulbuild".
+         Touching ".\menubar_debug\menubar.lastbuildstate".
+     1>Done Building Project "F:\Projects\Motion Interpolation\csci520-assignment2-startercode\fltk-1.3.2\ide\VisualC2010\menubar.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.94
