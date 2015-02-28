@@ -1,0 +1,38 @@
+﻿Build started 2/28/2015 12:08:50 PM.
+     1>Project "F:\Projects\MoCap\MotionInterpolation\IDE-starter\VS2010\interpolate\interpolate.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\interpolate.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\..\mocapPlayer-starter\interpolate.cpp" "..\..\..\mocapPlayer-starter\interpolator.cpp" "..\..\..\mocapPlayer-starter\motion.cpp" "..\..\..\mocapPlayer-starter\performanceCounter.cpp" "..\..\..\mocapPlayer-starter\posture.cpp" "..\..\..\mocapPlayer-starter\quaternion.cpp" "..\..\..\mocapPlayer-starter\skeleton.cpp" "..\..\..\mocapPlayer-starter\transform.cpp" "..\..\..\mocapPlayer-starter\vector.cpp"
+         interpolate.cpp
+         interpolator.cpp
+         motion.cpp
+         performanceCounter.cpp
+         posture.cpp
+         quaternion.cpp
+         skeleton.cpp
+         transform.cpp
+         vector.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Projects\MoCap\MotionInterpolation\IDE-starter\VS2010\Release\interpolate.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\interpolate.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\Projects\MoCap\MotionInterpolation\IDE-starter\VS2010\Release\interpolate.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Projects\MoCap\MotionInterpolation\IDE-starter\VS2010\Release\interpolate.lib" /MACHINE:X86 Release\interpolate.obj
+         Release\interpolator.obj
+         Release\motion.obj
+         Release\performanceCounter.obj
+         Release\posture.obj
+         Release\quaternion.obj
+         Release\skeleton.obj
+         Release\transform.obj
+         Release\vector.obj
+         Generating code
+         Finished generating code
+         interpolate.vcxproj -> F:\Projects\MoCap\MotionInterpolation\IDE-starter\VS2010\Release\interpolate.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"F:\Projects\MoCap\MotionInterpolation\IDE-starter\VS2010\Release\interpolate.exe;#1" /manifest Release\interpolate.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\interpolate.unsuccessfulbuild".
+         Touching "Release\interpolate.lastbuildstate".
+     1>Done Building Project "F:\Projects\MoCap\MotionInterpolation\IDE-starter\VS2010\interpolate\interpolate.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.73
