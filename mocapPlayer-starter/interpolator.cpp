@@ -42,7 +42,7 @@ void Interpolator::Interpolate(Motion * pInputMotion, Motion ** pOutputMotion, i
 }
 
 
-//tested!!!
+
 void Interpolator::Rotation2Euler(double R[9], double angles[3])
 {
   double cy = sqrt(R[0]*R[0] + R[3]*R[3]);
@@ -63,7 +63,7 @@ void Interpolator::Rotation2Euler(double R[9], double angles[3])
   for(int i=0; i<3; i++)
     angles[i] *= 180 / M_PI;
 }
-//tested!!!
+
 void Interpolator::Euler2Rotation(double angles[3], double R[9])
 {
   // students should implement this
@@ -90,8 +90,6 @@ void Interpolator::Euler2Rotation(double angles[3], double R[9])
 
 void Interpolator::LinearInterpolationEuler(Motion * pInputMotion, Motion * pOutputMotion, int N)
 {
-	
-
 
   printf("!!!!LinearInterpolationEuler!!!!\n");
   int inputLength = pInputMotion->GetNumFrames(); // frames are indexed 0, ..., inputLength-1
@@ -174,9 +172,8 @@ void Interpolator::BezierInterpolationEuler(Motion * pInputMotion, Motion * pOut
 
 void Interpolator::LinearInterpolationQuaternion(Motion * pInputMotion, Motion * pOutputMotion, int N)
 {
-
-
-	//test
+	//for testing
+	/*
 	double testEular[3];
 	double resultEular[3];
 	testEular[0] = 0; testEular[1] = 80; testEular[2] = 0; 
@@ -202,12 +199,10 @@ void Interpolator::LinearInterpolationQuaternion(Motion * pInputMotion, Motion *
 	double b11[3];
 	resultQ.GetRotation(&a11, b11);
 	printf("angle : %f\n", (a11/M_PI)*180);
-
-
-
+	*/
 
   // students should implement this
-  printf("!!!!LinearInterpolationQuaternion!!!!\n");
+  printf("Interpolation type: Linear Interpolation Quaternion\n");
   int inputLength = pInputMotion->GetNumFrames(); // frames are indexed 0, ..., inputLength-1
 
   int startKeyframe = 0;
@@ -240,39 +235,22 @@ void Interpolator::LinearInterpolationQuaternion(Motion * pInputMotion, Motion *
 		eularAngleStart[0] = startPosture->bone_rotation[bone].p[0];
 		eularAngleStart[1] = startPosture->bone_rotation[bone].p[1];
 		eularAngleStart[2] = startPosture->bone_rotation[bone].p[2];
-		//printf("eularAngleStart: %f %f %f\n", eularAngleStart[0], eularAngleStart[1], eularAngleStart[2]);
 
 		eularAngleEnd[0] = endPosture->bone_rotation[bone].p[0];
 		eularAngleEnd[1] = endPosture->bone_rotation[bone].p[1];
 		eularAngleEnd[2] = endPosture->bone_rotation[bone].p[2];
-		//printf("eularAngleEnd: %f %f %f\n", eularAngleEnd[0], eularAngleEnd[1], eularAngleEnd[2]);
 
 		Quaternion<double> qstart, qend;
 		Euler2Quaternion(eularAngleStart, qstart);
 		Euler2Quaternion(eularAngleEnd, qend);
-		//qstart.Print();
-		//qend.Print();
 
 		Quaternion<double> interpolatedQuaternion = Slerp(t, qstart, qend);
-		//interpolatedQuaternion.Print();
 		double interpolatedEular[3];
 		Quaternion2Euler(interpolatedQuaternion, interpolatedEular);
 		
 	    interpolatedPosture.bone_rotation[bone].setValue(interpolatedEular[0], interpolatedEular[1], interpolatedEular[2]);
-		if(bone == 3){
-			//qstart.Print();
-			//printf("t = %f\n", t); 
-			//interpolatedQuaternion.Print();
-			//qend.Print();
-			//printf("\n");
-		}
-
-		//printf("interpolated result in eular: %f %f %f\n", interpolatedEular[0], interpolatedEular[1], interpolatedEular[2]);
-	    //interpolatedPosture.bone_rotation[bone] = startPosture->bone_rotation[bone] * (1-t) + endPosture->bone_rotation[bone] * t;
 	  }
-	    pOutputMotion->SetPosture(startKeyframe + frame, interpolatedPosture);
-		
-
+	    pOutputMotion->SetPosture(startKeyframe + frame, interpolatedPosture);	
       }
 
     startKeyframe = endKeyframe;
@@ -313,26 +291,19 @@ Quaternion<double> Interpolator::Slerp(double t, Quaternion<double> & qStart, Qu
 				   qStart.Getx()*qEnd_.Getx()+
 				   qStart.Gety()*qEnd_.Gety()+
 				   qStart.Getz()*qEnd_.Getz();
-	//printf("cos¦È = %f\n", cos¦È);
-
+	
 	double ¦È = acos(cos¦È);
-	//printf("¦È = %f\n", ¦È);
 	double sin¦È = sin(¦È);
 	if(sin¦È != 0){
-	//printf("sin(¦È):%f\n", sin(¦È));
 	Quaternion<double> result;
 	double co1, co2;
 	co1 = sin((1-t)*¦È)/sin(¦È);
 	co2 = sin(t*¦È)/sin(¦È);
-	//printf("co1: %f  co2: %f\n", co1, co2);
 	result = co1*qStart+co2*qEnd_;
-	//result.Print();
 	result.Normalize();
-	//result.Print();
 	return result;
 	}
-	return qEnd_;
-	
+	return qEnd_;	
 }
 
 Quaternion<double> Interpolator::Double(Quaternion<double> p, Quaternion<double> q)
