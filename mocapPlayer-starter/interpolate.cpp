@@ -72,9 +72,9 @@ int main(int argc, char **argv)
 
   InterpolationType interpolationType;
   if (interpolationTypeString[0] == 'l')
-    interpolationType = LINEAR;
+		  interpolationType = LINEAR;
   else if (interpolationTypeString[0] == 'b')
-    interpolationType = BEZIER;
+		  interpolationType = BEZIER;
   else
   {
     printf("Error: unknown interpolation type: %s\n", interpolationTypeString);
