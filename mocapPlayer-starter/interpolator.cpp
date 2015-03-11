@@ -132,7 +132,128 @@ void Interpolator::LinearInterpolationEuler(Motion * pInputMotion, Motion * pOut
 void Interpolator::BezierInterpolationEuler(Motion * pInputMotion, Motion * pOutputMotion, int N)
 {
   // students should implement this
-	printf("!!!!!!!!!!!!!!!!!!Interpolation type: Bezier Interpolation Eular!!!!!!!!!!!!!!!!!!!!!!\n");
+	printf("Interpolation type: Bezier Interpolation Eular\n");
+	 int inputLength = pInputMotion->GetNumFrames(); // frames are indexed 0, ..., inputLength-1
+  int startKeyframe = 0;
+  int previousKeyframe = -1, nextKeyframe = -1;
+
+  while (startKeyframe + N + 1 < inputLength)
+  {//while start
+    int endKeyframe = startKeyframe + N + 1;
+	nextKeyframe = endKeyframe + N + 1;
+
+    Posture * startPosture = pInputMotion->GetPosture(startKeyframe);
+    Posture * endPosture = pInputMotion->GetPosture(endKeyframe);
+	Posture * previousPosture;
+	Posture * nextPosture;
+	
+	//get previous posture
+	if(previousKeyframe == -1){
+		previousPosture = NULL;
+	}else{
+		previousPosture = pInputMotion->GetPosture(previousKeyframe);
+	}
+
+	//get next posture
+	if(nextKeyframe >= inputLength){
+		nextPosture = NULL;
+	}else{
+		nextPosture = pInputMotion->GetPosture(nextKeyframe);
+	}
+
+    // copy start and end keyframe
+    pOutputMotion->SetPosture(startKeyframe, *startPosture);
+    pOutputMotion->SetPosture(endKeyframe, *endPosture);
+
+    // interpolate in between
+    for(int frame=1; frame<=N; frame++)
+    {
+		
+      Posture interpolatedPosture;
+      double t = 1.0 * frame / (N+1);
+
+      // bezier interpolate root position/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      
+		
+		vector rootPosition_start, rootPosition_end, rootPosition_previous, rootPosition_next;
+		if(previousKeyframe != -1){
+			rootPosition_previous = previousPosture->root_pos;
+		}
+		if(nextKeyframe<inputLength){
+			rootPosition_next = nextPosture->root_pos;
+		}
+			rootPosition_start = startPosture->root_pos;
+			rootPosition_end = endPosture->root_pos;
+		
+		vector A_startRoot, A_endRoot, AstartRoot, AendRoot, BstartRoot, BendRoot;
+	  
+		if(previousKeyframe != -1){
+		A_startRoot = (rootPosition_previous*(-1.0)+rootPosition_start*(2.0))*(0.5)+(rootPosition_end)*0.5;
+		AstartRoot = rootPosition_start*(1-1.0/3)+A_startRoot*(1.0/3);
+		BstartRoot = rootPosition_start*(1+1.0/3)+A_startRoot*(-1.0/3);
+		}else{
+		AstartRoot = rootPosition_start*(1-1.0/3)+(rootPosition_next*(-1.0)+rootPosition_end*(2.0))*(1.0/3);
+		}
+
+		if(nextKeyframe<inputLength){
+		A_endRoot = (rootPosition_start*(-1.0)+rootPosition_end*(2.0))*(0.5)+(rootPosition_next)*0.5;
+		AendRoot = rootPosition_end*(1-1.0/3)+A_endRoot*(1.0/3);
+		BendRoot = rootPosition_end*(1+1.0/3)+A_endRoot*(-1.0/3);	
+		}else{
+		BendRoot = rootPosition_end*(1-1.0/3)+(rootPosition_previous*(-1.0)+rootPosition_start*(2.0))*(1.0/3);
+		}
+	  
+		interpolatedPosture.root_pos = DeCasteljauEuler(t, rootPosition_start, AstartRoot, BendRoot, rootPosition_end);
+	  
+	  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+      // interpolate bone rotations
+      for (int bone = 0; bone < MAX_BONES_IN_ASF_FILE; bone++){
+       
+		vector eularAngleStart;
+		vector eularAngleEnd;
+		vector eularAnglePrevious;
+		vector eularAngleNext;
+		if(previousKeyframe != -1){
+			eularAnglePrevious = previousPosture->bone_rotation[bone];
+		}
+		if(nextKeyframe<inputLength){
+			eularAngleNext = nextPosture->bone_rotation[bone];
+		}
+
+		eularAngleStart = startPosture->bone_rotation[bone];
+		eularAngleEnd = endPosture->bone_rotation[bone];
+		
+		
+		vector A_start, A_end, Astart, Aend, Bstart, Bend;
+		//compute control point P2 P3
+		if(previousKeyframe != -1){
+		A_start = (eularAnglePrevious*(-1.0)+eularAngleStart*(2.0))*(0.5)+(eularAngleEnd)*0.5;
+		Astart = eularAngleStart*(1-1.0/3)+A_start*(1.0/3);
+		Bstart = eularAngleStart*(1+1.0/3)+A_start*(-1.0/3);
+		}else{
+		Astart = eularAngleStart*(1-1.0/3)+(eularAngleNext*(-1.0)+eularAngleEnd*(2.0))*(1.0/3);
+		}
+
+		if(nextKeyframe<inputLength){
+		A_end = (eularAngleStart*(-1.0)+eularAngleEnd*(2.0))*(0.5)+(eularAngleNext)*0.5;
+		Aend = eularAngleEnd*(1-1.0/3)+A_end*(1.0/3);
+		Bend = eularAngleEnd*(1+1.0/3)+A_end*(-1.0/3);	
+		}else{
+		Bend = eularAngleEnd*(1-1.0/3)+(eularAnglePrevious*(-1.0)+eularAngleStart*(2.0))*(1.0/3);
+		}
+
+	    interpolatedPosture.bone_rotation[bone] = DeCasteljauEuler(t, eularAngleStart, Astart, Bend, eularAngleEnd);
+	  }
+	    pOutputMotion->SetPosture(startKeyframe + frame, interpolatedPosture);	
+      }
+
+	previousKeyframe = startKeyframe;
+    startKeyframe = endKeyframe;
+  }//while end
+
+  for(int frame=startKeyframe+1; frame<inputLength; frame++)
+    pOutputMotion->SetPosture(frame, *(pInputMotion->GetPosture(frame)));
 
  
 }
@@ -271,8 +392,36 @@ void Interpolator::BezierInterpolationQuaternion(Motion * pInputMotion, Motion *
       Posture interpolatedPosture;
       double t = 1.0 * frame / (N+1);
 
-      // interpolate root position
-      interpolatedPosture.root_pos = startPosture->root_pos * (1-t) + endPosture->root_pos * t;
+      // bezier interpolate root position
+      	vector rootPosition_start, rootPosition_end, rootPosition_previous, rootPosition_next;
+		if(previousKeyframe != -1){
+			rootPosition_previous = previousPosture->root_pos;
+		}
+		if(nextKeyframe<inputLength){
+			rootPosition_next = nextPosture->root_pos;
+		}
+			rootPosition_start = startPosture->root_pos;
+			rootPosition_end = endPosture->root_pos;
+		
+		vector A_startRoot, A_endRoot, AstartRoot, AendRoot, BstartRoot, BendRoot;
+	  
+		if(previousKeyframe != -1){
+		A_startRoot = (rootPosition_previous*(-1.0)+rootPosition_start*(2.0))*(0.5)+(rootPosition_end)*0.5;
+		AstartRoot = rootPosition_start*(1-1.0/3)+A_startRoot*(1.0/3);
+		BstartRoot = rootPosition_start*(1+1.0/3)+A_startRoot*(-1.0/3);
+		}else{
+		AstartRoot = rootPosition_start*(1-1.0/3)+(rootPosition_next*(-1.0)+rootPosition_end*(2.0))*(1.0/3);
+		}
+
+		if(nextKeyframe<inputLength){
+		A_endRoot = (rootPosition_start*(-1.0)+rootPosition_end*(2.0))*(0.5)+(rootPosition_next)*0.5;
+		AendRoot = rootPosition_end*(1-1.0/3)+A_endRoot*(1.0/3);
+		BendRoot = rootPosition_end*(1+1.0/3)+A_endRoot*(-1.0/3);	
+		}else{
+		BendRoot = rootPosition_end*(1-1.0/3)+(rootPosition_previous*(-1.0)+rootPosition_start*(2.0))*(1.0/3);
+		}
+	  
+		interpolatedPosture.root_pos = DeCasteljauEuler(t, rootPosition_start, AstartRoot, BendRoot, rootPosition_end);
 
       // interpolate bone rotations
       for (int bone = 0; bone < MAX_BONES_IN_ASF_FILE; bone++){
