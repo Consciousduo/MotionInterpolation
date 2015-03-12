@@ -521,12 +521,26 @@ Quaternion<double> Interpolator::Slerp(double t, Quaternion<double> & qStart, Qu
 {
   // students should implement this
 	
-	double cos¦È =  qStart.Gets()*qEnd_.Gets()+
+	double cos¦È1 = qStart.Gets()*qEnd_.Gets()+
 				   qStart.Getx()*qEnd_.Getx()+
 				   qStart.Gety()*qEnd_.Gety()+
 				   qStart.Getz()*qEnd_.Getz();
-	
-	double ¦È = acos(cos¦È);
+	double ¦È1 = acos(cos¦È1);
+
+	Quaternion<double> temp = -1*qEnd_;
+	double cos¦È2 =  qStart.Gets()*temp.Gets()+
+					qStart.Getx()*temp.Getx()+
+					qStart.Gety()*temp.Gety()+
+					qStart.Getz()*temp.Getz();
+	double ¦È2 = acos(cos¦È2);
+
+	double ¦È;
+	if(fabs(¦È1)<=fabs(¦È2)){
+		¦È = ¦È1;
+	}else{
+		¦È = ¦È2;
+		qEnd_ = temp;
+	}
 	double sin¦È = sin(¦È);
 	if(sin¦È != 0){
 	Quaternion<double> result;

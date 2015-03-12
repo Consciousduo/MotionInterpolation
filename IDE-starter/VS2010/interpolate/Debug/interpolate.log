@@ -1,4 +1,4 @@
-﻿Build started 3/10/2015 9:16:58 PM.
+﻿Build started 3/11/2015 5:41:45 PM.
      1>Project "F:\Projects\MoCap\MotionInterpolation\IDE-starter\VS2010\interpolate\interpolate.vcxproj" on node 2 (Build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\interpolate.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -23,4 +23,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.52
+Time Elapsed 00:00:00.40
